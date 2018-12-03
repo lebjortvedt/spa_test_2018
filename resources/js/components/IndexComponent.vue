@@ -21,7 +21,7 @@
                 <tr v-for="song in songs" :key="song.id">
                     <td>{{ song.id }}</td>
                     <td>{{ song.artist_name }}</td>
-                    <td>{{ song.song_name }}</td>
+                    <td>{{ song.song_title }}</td>
                     <td>{{ song.release_year }}</td>
                     <td><router-link :to="{name: 'Edit', params: { id: song.id }}" class="btn btn-primary">Edit</router-link></td>
                      <td><button class="btn btn-danger" @click.prevent="deleteSong(song.id)">Delete</button></td>
